@@ -1,7 +1,7 @@
- import express from 'express';
+ const express = require('express')
 
- import { getPosts, getPost, getPostsBySearch, createPost, commentPost, updatePost, deletePost, likePost, getPostsByCreator } from '../controllers/posts.js';
- import auth from '../middleware/auth.js';
+ const { getPosts, getPost, getPostsBySearch, createPost, commentPost, updatePost, deletePost, likePost, getPostsByCreator } = require('../controllers/posts.js');
+ const auth = require('../middleware/auth.js');
 
  const router = express.Router();
 
@@ -16,4 +16,4 @@
  router.patch("/:id/likepost", auth, likePost);
  router.post('/:id/commentPost', commentPost);
 
- export default router;
+ module.exports = router;
