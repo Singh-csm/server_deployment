@@ -8,7 +8,7 @@
     "start": "node index.js"
   },
  "engines" :{ 
-    "npm": ">=8.0.0 <9.6.3", 
+    "npm": ">=8.0.0 <9.6.4", 
     "node": ">=16.0.0 <17.0.0" 
       },
   "keywords": [],
